@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Product } from '../products';
 
@@ -7,8 +7,9 @@ import { Product } from '../products';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './product-alerts.component.html',
-  styleUrl: './product-alerts.component.css'
+  styleUrl: './product-alerts.component.css',
 })
 export class ProductAlertsComponent {
   @Input() product: Product | undefined;
+  @Output() notify = new EventEmitter();
 }
