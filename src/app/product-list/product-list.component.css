@@ -6,11 +6,11 @@
 }
 
 .product {
-    background: #f3f3f3;
+    background: #eee;
     width: 300px;
     height: 200px;
     padding: 0 20px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .buttons {
