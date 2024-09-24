@@ -19,7 +19,7 @@ export class ProductDetailsComponent implements OnInit {
     private cartService: CartService
   ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
     const productIdFromRoute = Number(routeParams.get('productId'));
 
